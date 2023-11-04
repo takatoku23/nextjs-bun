@@ -8,7 +8,7 @@ services:
       dockerfile: docker/nextjs/Dockerfile
     volumes:
       - "./app:/app"
-    command: [ "yarn", "run", "dev" ]
+    command: [ "bun", "run", "dev" ]
     ports:
       - "3000:3000"
       - "6006:6006"
